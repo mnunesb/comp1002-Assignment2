@@ -13,83 +13,112 @@
 <body>
     <!--Header to let customer know what this site is about-->
     <header>
-        <h1>Welcome to Georgian College Pizzeria</h1> 
+        <h1>Welcome to Georgian College Pizzeria</h1>
+        <img src="images/pizza.png" alt="Pizza Showcase" style="vertical-align: middle;"/>
         <h2>Please make your order bellow</h2>
     </header>
     <main>
-
-        <fieldset>
-            <legend>Personal Information</legend>
-            <div>
-                <label for="fname">First Name:</label>
-                <input type="text" name="fname" id="fname" size="30" maxlength="50" placeholder="Type Your First Name Here"/>
-            </div>
-            <div>
-                    <label for="lname">Last Name:</label>
-                    <input type="text" name="lname" id="lname" size="30" maxlength="50" placeholder="Type Your Last Name Here"/>
-            </div>
-            <div>
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone"/>
-            </div>
-            <div>
-                <label for="address">Address:</label>
-                <input type="text" name="address" id="address"/>
-            <div>
-                <label for="address num">Apt/suite/other:</label>
-                <input type="text" name="address num" id="address num"/>
-            </div>
-            </div>
-        </fieldset>
-        <fieldset>
-            <legend>Payment Information</legend>
-            <input type="radio" name="pay" id="Cash" value="Cash" />
-            <label for="amex">Cash</label>
-            <input type="radio" name="pay" id="amex" value="American Express" />
-            <label for="amex">American Express</label>
-            <input type="radio" name="pay" id="mc" value="MasterCard" />
-            <label for="mc">MasterCard</label>
-            <input type="radio" name="pay" id="visa" value="visa" />
-            <label for="visa">VISA</label>
-            <div>
-                <label for="ccNumber">Credit Card Number</label>
-                <input id="ccNumber" type="text" name="ccNumber" />
-            </div>
-            <div>
-                <label for="ccYear">Expiration Year</label>
-                <select id="ccYear" name="ccYear">
-                    <option value="2021">2021</option>
-                    <option value="2022">2022</option>
-                    <option value="2023">2023</option>
-                    <option value="2024">2024</option>
-                    <option value="2024">2025</option>
-                    <option value="2024">2026</option>
-                    <option value="2024">2027</option>
-                </select>
-            </div>
-            <div>
-                <label for="ccMonth">Expiration Month</label>
-                <select name="ccMonth" id="ccMonth">
-                    <option value="01">01</option>
-                    <option value="02">02</option>
-                    <option value="03">03</option>
-                    <option value="04">04</option>
-                    <option value="05">05</option>
-                    <option value="06">06</option>
-                    <option value="07">07</option>
-                    <option value="08">08</option>
-                    <option value="09">09</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                </select>
-            </div>
-        </fieldset>
+        <form>
+        <!--Section for Pizza Information-->
+            <fieldset>
+                <legend>Pizza Information</legend>
+                <div>
+                    <label for="pizza num">Number of Pizzas</label>
+                    <input type="number" name="pizza num" id="pizza num" max="20" placeholder="0"/>
+                </div>
+                <div>
+                    <label for="size">Pizza Size</label>
+                    <input type="radio" name="size" id="Small" value="Small" />
+                    <label for="Small">Small</label>
+                    <input type="radio" name="size" id="medium" value="Medium" />
+                    <label for="Medium">Medium</label>
+                    <input type="radio" name="size" id="Large" value="Large" />
+                    <label for="Large">Large</label>
+                    <input type="radio" name="size" id="Extra-Large" value="Extra-Large" />
+                    <label for="Extra-Large">Extra-Large</label>
+                </div>
+            </fieldset>
+        <!--Section for User information-->    
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div>
+                    <label for="fname">First Name:</label>
+                    <input type="text" name="fname" id="fname" size="30" maxlength="50" placeholder="Type Your First Name Here"/>
+                </div>
+                <div>
+                        <label for="lname">Last Name:</label>
+                        <input type="text" name="lname" id="lname" size="30" maxlength="50" placeholder="Type Your Last Name Here"/>
+                </div>
+                <div>
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="000-000-0000"/>
+                </div>
+                <div>
+                    <label for="address">Address:</label>
+                    <input type="text" name="address" id="address" placeholder="Street Name and Number"/>
+                <div>
+                    <label for="address num">Apt/suite/other:</label>
+                    <input type="number" name="address num" id="address num" placeholder="0"/>
+                </div>
+                </div>
+            </fieldset>
+            <!--Section for payment information-->
+            <fieldset>
+                <legend>Payment Information</legend>
+                <!--payment type-->
+                <input type="radio" name="pay" id="Cash" value="Cash" />
+                <label for="Cash">Cash</label>
+                <input type="radio" name="pay" id="amex" value="American Express" />
+                <label for="amex">American Express</label>
+                <input type="radio" name="pay" id="mc" value="MasterCard" />
+                <label for="mc">MasterCard</label>
+                <input type="radio" name="pay" id="visa" value="visa" />
+                <label for="visa">VISA</label>
+                <!--If payment type is by credit card-->
+                <div>
+                    <label for="ccNumber">Credit Card Number</label>
+                    <input id="ccNumber" type="text" name="ccNumber" />
+                </div>
+                <div>
+                    <label for="ccYear">Expiration Year</label>
+                    <select id="ccYear" name="ccYear">
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2024">2025</option>
+                        <option value="2024">2026</option>
+                        <option value="2024">2027</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="ccMonth">Expiration Month</label>
+                    <select name="ccMonth" id="ccMonth">
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                        <option value="08">08</option>
+                        <option value="09">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                </div>
+            </fieldset>
+            <!--Submit and Reset form buttons-->
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
     </main>
     <!--Footer and Contact Info-->
     <footer>
         <p>Made by: Marcello Nunes Bernardes</p>
         <p>Contact: marcello.nunesbernardes@mygeorgian.ca</p>
+        <p><small>©Georgian Pizzeria. All rights reserved</small></p>
     </footer>
 </body>
 </html>
