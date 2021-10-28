@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
     <!--meta tags-->
-    <meta charset="UTF-8">
-    <meta lang="en">
+    <meta charset="UTF-8" lang="en">
     <meta name="author" content="Marcello Nunes Bernardes">
     <meta name="description" content="Page created to practice FORMS">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,8 +22,8 @@
             <fieldset>
                 <legend>Pizza Information</legend>
                 <div>
-                    <label for="pizza num">Number of Pizzas:</label>
-                    <select name="pizza num" id="pizza num">
+                    <label for="pizzanum">Number of Pizzas:</label>
+                    <select name="pizzanum" id="pizzanum">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -38,30 +37,33 @@
                       </select>
                 </div>
                 <div>
-                    <label for="size">Pizza Size:</label>
-                    <input type="radio" name="size" id="Small" value="Small" />
-                    <label for="Small">Small</label>
-                    <input type="radio" name="size" id="medium" value="Medium" />
-                    <label for="Medium">Medium</label>
-                    <input type="radio" name="size" id="Large" value="Large" />
-                    <label for="Large">Large</label>
-                    <input type="radio" name="size" id="Extra-Large" value="Extra-Large" />
-                    <label for="Extra-Large">Extra-Large</label>
+                    <p>Pizza Size:
+                        <input type="radio" name="size" id="Small" />
+                        <label for="Small">Small</label>
+                        <input type="radio" name="size" id="Medium"/>
+                        <label for="Medium">Medium</label>
+                        <input type="radio" name="size" id="Large"/>
+                        <label for="Large">Large</label>
+                        <input type="radio" name="size" id="Extra-Large"/>
+                        <label for="Extra-Large">Extra-Large</label>
+                    </p>
                 </div>
                 <div>
-                    <label for="pizza shape">Pizza Shape:</label>
-                    <input type="radio" name="pizza shape" id="Square" />
-                    <label for="Square">Square</label>
-                    <input type="radio" name="pizza shape" id="Round" />
-                    <label for="Round">Round</label>
+                    <p>Pizza Shape:
+                        <input type="radio" name="pizzashape" id="Square" />
+                        <label for="Square">Square</label>
+                        <input type="radio" name="pizzashape" id="Round" />
+                        <label for="Round">Round</label>
+                    </p>
                 <div>
-                    <label for="Crust">Pizza Crust:</label>
-                    <input type="radio" name="crust" id="Regular" />
-                    <label for="Regular">Regular</label>
-                    <input type="radio" name="crust" id="Thin" />
-                    <label for="Thin">Thin</label>
-                    <input type="radio" name="crust" id="Cheese" />
-                    <label for="Cheese">Cheese</label>
+                    <p>Pizza Crust:
+                        <input type="radio" name="crust" id="Regular" />
+                        <label for="Regular">Regular</label>
+                        <input type="radio" name="crust" id="Thin" />
+                        <label for="Thin">Thin</label>
+                        <input type="radio" name="crust" id="Cheese" />
+                        <label for="Cheese">Cheese</label>
+                    </p>
                 </div>
                 </div>
             </fieldset>
@@ -69,13 +71,13 @@
             <fieldset>
                 <legend>Build your pizza</legend>
                 <div>
-                    <input type="checkbox" id="Toppings" name="Toppings1" value="Mozzarella">
-                    <label for="Toppings1"> Mozzarella</label>
+                    <input type="checkbox" id="Toppings" name="Toppings" value="Mozzarella">
+                    <label for="Toppings"> Mozzarella</label>
                     <input type="checkbox" id="Toppings2" name="Toppings2" value="Pepperoni">
                     <label for="Toppings2"> Pepperoni</label>
                     <input type="checkbox" id="Toppings3" name="Toppings3" value="Garlic">
                     <label for="Toppings3"> Garlic</label><br>
-                    <input type="checkbox" id="Toppings" name="Toppings4" value="Tomato">
+                    <input type="checkbox" id="Toppings4" name="Toppings4" value="Tomato">
                     <label for="Toppings4"> Tomato</label>
                     <input type="checkbox" id="Toppings5" name="Toppings5" value="Onions">
                     <label for="Toppings5"> Onions</label>
@@ -84,8 +86,9 @@
                 </div>
             </fieldset>
             <fieldset>
-                <label for="requests">Any special request?:</label>
-                <textarea id="request" name="request">Ex: No tomato sauce</textarea>
+                <p>Any special request?:
+                    <textarea id="request" name="request">Ex: No tomato sauce</textarea>
+                </p>
             </fieldset>
             <!--Section for User information-->    
             <fieldset>
@@ -115,8 +118,8 @@
                 <div>
                     <label for="address">Address:</label>
                     <input type="text" name="address" id="address" placeholder="Street Name and Number"/>
-                    <label for="address num">Apt/suite/other:</label>
-                    <input type="number" name="address num" id="address num" placeholder="0"/>
+                    <label for="addressnum">Apt/suite/other:</label>
+                    <input type="number" name="addressnum" id="addressnum" placeholder="0"/>
                 </div>
             </fieldset>
             <!--Section for payment information-->
