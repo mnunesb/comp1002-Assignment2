@@ -19,15 +19,15 @@
     </header>
     <main>
         <form>
-        <!--Section for Pizza Information-->
+            <!--Section for Pizza Information-->
             <fieldset>
                 <legend>Pizza Information</legend>
                 <div>
-                    <label for="pizza num">Number of Pizzas</label>
+                    <label for="pizza num">Number of Pizzas:</label>
                     <input type="number" name="pizza num" id="pizza num" max="20" placeholder="0"/>
                 </div>
                 <div>
-                    <label for="size">Pizza Size</label>
+                    <label for="size">Pizza Size:</label>
                     <input type="radio" name="size" id="Small" value="Small" />
                     <label for="Small">Small</label>
                     <input type="radio" name="size" id="medium" value="Medium" />
@@ -37,8 +37,36 @@
                     <input type="radio" name="size" id="Extra-Large" value="Extra-Large" />
                     <label for="Extra-Large">Extra-Large</label>
                 </div>
+                <div>
+                    <label for="pizza shape">Pizza Shape:</label>
+                    <input type="radio" name="pizza shape" id="Square" />
+                    <label for="Square">Square</label>
+                    <input type="radio" name="pizza shape" id="Round" />
+                    <label for="Round">Round</label>
+                <div>
+                    <label for="Crust">Pizza Crust:</label>
+                    <input type="radio" name="crust" id="Regular" />
+                    <label for="Regular">Regular</label>
+                    <input type="radio" name="crust" id="Thin" />
+                    <label for="Thin">Thin</label>
+                    <input type="radio" name="crust" id="Cheese" />
+                    <label for="Cheese">Cheese</label>
+                </div>
+                </div>
             </fieldset>
-        <!--Section for User information-->    
+            <!--Section for Pizza Toppings-->
+            <fieldset>
+                <legend>Build your pizza</legend>
+                <div>
+                    <input type="checkbox" id="Toppings" name="Toppings1" value="Mozzarella">
+                    <label for="Toppings1"> Mozzarella</label>
+                    <input type="checkbox" id="Toppings2" name="Toppings2" value="Pepperoni">
+                    <label for="Toppings2"> Pepperoni</label>
+                    <input type="checkbox" id="Toppings3" name="Toppings3" value="Garlic">
+                    <label for="Toppings3"> Garlic</label>
+                </div>
+            </fieldset>
+            <!--Section for User information-->    
             <fieldset>
                 <legend>Personal Information</legend>
                 <div>
@@ -46,20 +74,28 @@
                     <input type="text" name="fname" id="fname" size="30" maxlength="50" placeholder="Type Your First Name Here"/>
                 </div>
                 <div>
-                        <label for="lname">Last Name:</label>
-                        <input type="text" name="lname" id="lname" size="30" maxlength="50" placeholder="Type Your Last Name Here"/>
+                    <label for="lname">Last Name:</label>
+                    <input type="text" name="lname" id="lname" size="30" maxlength="50" placeholder="Type Your Last Name Here"/>
                 </div>
                 <div>
                     <label for="phone">Phone Number:</label>
                     <input type="tel" id="phone" name="phone" placeholder="000-000-0000"/>
                 </div>
+            </fieldset>
+            <!--Section for Delivery Options-->
+            <fieldset>
+                <legend>Delivery Options</legend>
+                <input type="radio" name="delivery" id="Dine-in" value="Dine-in" />
+                <label for="Dine-in">Dine-in</label>
+                <input type="radio" name="delivery" id="Take-out" value="Take-out" />
+                <label for="Take-out">Take-out</label>
+                <input type="radio" name="delivery" id="Delivery" value="Delivery" />
+                <label for="Delivery">Delivery</label>
                 <div>
                     <label for="address">Address:</label>
                     <input type="text" name="address" id="address" placeholder="Street Name and Number"/>
-                <div>
                     <label for="address num">Apt/suite/other:</label>
                     <input type="number" name="address num" id="address num" placeholder="0"/>
-                </div>
                 </div>
             </fieldset>
             <!--Section for payment information-->
