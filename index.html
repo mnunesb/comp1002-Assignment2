@@ -19,12 +19,23 @@
     </header>
     <main>
         <form>
-            <!--Section for Pizza Information-->
+            <!--Section for Pizza Information, such as number, size, shape and crust-->
             <fieldset>
                 <legend>Pizza Information</legend>
                 <div>
                     <label for="pizza num">Number of Pizzas:</label>
-                    <input type="number" name="pizza num" id="pizza num" max="20" placeholder="0"/>
+                    <select name="pizza num" id="pizza num">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                      </select>
                 </div>
                 <div>
                     <label for="size">Pizza Size:</label>
@@ -63,8 +74,18 @@
                     <input type="checkbox" id="Toppings2" name="Toppings2" value="Pepperoni">
                     <label for="Toppings2"> Pepperoni</label>
                     <input type="checkbox" id="Toppings3" name="Toppings3" value="Garlic">
-                    <label for="Toppings3"> Garlic</label>
+                    <label for="Toppings3"> Garlic</label><br>
+                    <input type="checkbox" id="Toppings" name="Toppings4" value="Tomato">
+                    <label for="Toppings4"> Tomato</label>
+                    <input type="checkbox" id="Toppings5" name="Toppings5" value="Onions">
+                    <label for="Toppings5"> Onions</label>
+                    <input type="checkbox" id="Toppings6" name="Toppings6" value="Pineapple">
+                    <label for="Toppings6"> Pineapple</label><br>
                 </div>
+            </fieldset>
+            <fieldset>
+                <label for="requests">Any special request?:</label>
+                <textarea id="request" name="request">Ex: No tomato sauce</textarea>
             </fieldset>
             <!--Section for User information-->    
             <fieldset>
@@ -101,7 +122,6 @@
             <!--Section for payment information-->
             <fieldset>
                 <legend>Payment Information</legend>
-                <!--payment type-->
                 <input type="radio" name="pay" id="Cash" value="Cash" />
                 <label for="Cash">Cash</label>
                 <input type="radio" name="pay" id="amex" value="American Express" />
@@ -113,7 +133,7 @@
                 <!--If payment type is by credit card-->
                 <div>
                     <label for="ccNumber">Credit Card Number</label>
-                    <input id="ccNumber" type="text" name="ccNumber" />
+                    <input id="ccNumber" type="number" name="ccNumber" />
                 </div>
                 <div>
                     <label for="ccYear">Expiration Year</label>
